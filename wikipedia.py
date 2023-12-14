@@ -5,7 +5,7 @@ import time
 driver = webdriver.Edge()
 driver.get("https://en.wikipedia.org/wiki/Main_Page")
 
-#przechodzi do divu ' articlecount' i pobiera tresc znacznika 'a'
+#przechodzi do div ' articlecount' i pobiera tresc znacznika 'a'
 articles = driver.find_element(By.CSS_SELECTOR,'#articlecount a')
 talk_button = driver.find_element(By.ID,'pt-anontalk')
 print(talk_button.text)
@@ -13,7 +13,7 @@ print(talk_button.text)
 #print(articles.text)
 
 #szuka linku z podanym tekstem
-all_portals= driver.find_element(By.LINK_TEXT,'MediaWiki') #zajebiste
+all_portals= driver.find_element(By.LINK_TEXT,'MediaWiki') 
 #all_portals.click()
 #wslazuje na wyszukiwarke
 search_bar = driver.find_element(By.NAME,'search')
